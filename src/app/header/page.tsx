@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {Import, Menu, X } from "lucide-react";
+import {Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
