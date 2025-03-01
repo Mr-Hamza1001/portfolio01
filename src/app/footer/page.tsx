@@ -4,7 +4,7 @@ export default function Footer (){
         <div>
              {/* Footer */}
       <hr className="text-gray mt-40" />
-      <footer className="max-w-6xl mx-auto lg:max-w-3xl md:max-w-2xl sm:max-w-xl">
+      <footer className="max-w-6xl mx-auto lg:max-w-3xl md:max-w-2xl sm:max-w-xl xs:max-w-xs">
         <div className="flex justify-between pt-10">
           <div className="flex gap-3">
             <Image src="/Logo.svg" width={16} height={16} alt="logo" />

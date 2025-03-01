@@ -2,8 +2,8 @@ import Image from "next/image";
 export default function Main() {
     return (
         <div>
-            <main className="lg:max-w-3xl mx-auto md:max-w-2xl sm:max-w-xl xs:max-w-xs">
-                    <section className="max-w-6xl mx-auto flex justify-between items-center mt-[76] xs:flex-wrap">
+            <main className="lg:max-w-3xl mx-auto md:max-w-2xl sm:max-w-xl xs:max-w-xs ts:max-w-72">
+                    <section className="max-w-6xl mx-auto flex justify-between items-center mt-[76] xs:flex-wrap ts:flex-wrap ts:justify-center">
                       <div>
                         <div className="text-4xl font-serif">
                           <span>I m a </span> <span className="text-A2">full stack programmer</span>
@@ -17,7 +17,7 @@ export default function Main() {
                         </div>
                       </div>
                       <div >
-                        <Image src="/Group 46.svg" alt="pic" />
+                        <Image src="/Group 46.svg" width={469} height={386} alt="pic" />
                         <div className="flex items-center gap-4 box-border border ">
                           <div className="w-[16] h-[16] bg-primary ml-4 "></div>
                           <div>
@@ -26,10 +26,10 @@ export default function Main() {
                         </div>
                       </div>
                     </section>
-                    <section className="max-w-7xl mx-auto mt-[128] ">
-                      <div className=" flex items-center xs:justify-center">
+                    <section className="max-w-7xl mx-auto mt-[128]">
+                      <div className=" flex items-center xs:justify-center ts:justify-center">
                         <div className="flex flex-col justify-center mx-auto">
-                          <div className="box-border border w-[658] h-[85] text-gray relative sm:w-[550] xs:w-[350] xs:h-[65]">
+                          <div className="box-border border w-[658] h-[85] text-gray relative sm:w-[550] xs:w-[350] xs:h-[65]]">
                             <Image className="absolute bottom-[70] left-2 xs:bottom-[50] " src="/Frame 49.svg" width={41} height={29} alt="comas" />
                             <p className="font-medium text-2xl  text-center pt-6 text-white tracking-widest xs:text-sm">with great power comes great electricity bill</p>
                             <div>
@@ -49,12 +49,12 @@ export default function Main() {
                     {/* Projects Section */}
                     <section className="mx-auto max-w-6xl mt-10">
                       <div className="flex justify-between items-center">
-                        <div className="flex justify-center items-center gap-8">
+                        <div className="flex justify-center items-center gap-8 xs:gap-2">
                           <div>
                             <p className="text-A2 font-xl text-3xl"># <span className="text-white">projects</span></p>
                           </div>
                           <div>
-                            <div className="box-border border w-[511] md:w-[250] sm:w-[200] text-A2"></div>
+                            <div className="box-border border w-[511] md:w-[250] sm:w-[200] xs:w-[100] text-A2"></div>
                           </div>
                         </div>
                         <div>
@@ -64,7 +64,7 @@ export default function Main() {
             
             
                       <div className="flex justify-between  ">
-                        <div className=" flex gap-8 mt-12 md:flex-wrap md:justify-center sm:flex-wrap sm:justify-center">
+                        <div className=" flex gap-8 mt-12 md:flex-wrap md:justify-center sm:flex-wrap sm:justify-center xs:flex-wrap xs:justify-center ts:flex-wrap ts:justify-center">
                           <div className="flex flex-col">
                             <div className="box-border border ">
                               <div>
@@ -129,15 +129,15 @@ export default function Main() {
                         <div>
                           <h2 className="text-A2 font-xl text-3xl"># <span className="text-white">skills</span></h2>
                         </div>
-                        <div className="box-border border w-[250] text-A2"></div>
+                        <div className="box-border border w-[250] xs:w-[100] ts:w-[100] text-A2"></div>
                       </div>
             
-                      <div className="flex justify-between pt-8 md:flex-wrap md:justify-center sm:flex-wrap sm:justify-center">
+                      <div className="flex justify-between pt-8 md:flex-wrap md:justify-center sm:flex-wrap sm:justify-center ts:flex-wrap">
                         <div>
                           <Image src="/Group 36.svg" width={350} height={280} alt="" />
                         </div>
             
-                        <div className="flex gap-5 md:pt-8 sm:pt-8">
+                        <div className="flex gap-5 md:pt-8 sm:pt-8 ts:pt-16 xs:gap-3">
                           <div>
                             <div>
                               <div className="box-border border  text-gray">
@@ -206,12 +206,12 @@ export default function Main() {
                           <h2 className="text-A2 font-xl text-3xl"># <span className="text-white">about-me</span></h2>
                         </div>
                         <div>
-                          <div className="box-border border w-[250] text-A2"></div>
+                          <div className="box-border border w-[250] xs:w-[100] text-A2"></div>
                         </div>
                       </div>
             
-                      <div className="flex justify-between pt-10 sm:items-center">
-                        <div className="text-gray tracking-widest leading-7 sm:leading-5">
+                      <div className="flex justify-between pt-10 sm:items-center xs:flex-wrap">
+                        <div className="text-gray tracking-widest leading-7 sm:leading-5 xs:leading-normal">
                           <p>Hello, i m Mosab!</p> <br />
                           <p>I m a full-stack developer and instructor based in <br /> Multan, Pakistan. I craft scalable software solutions <br /> from scratch and enhance them into efficient, user- <br />friendly applications.</p> <br />
                           <p>Transforming ideas into impactful software has been <br /> my passion for years. I have been helping businesses <br /> innovate and grow with tailored digital solutions. I <br /> constantly strive to explore the latest technologies <br /> and best practices.</p>
@@ -234,29 +234,29 @@ export default function Main() {
                         <div>
                           <h2 className="text-A2 font-xl text-3xl"># <span className="text-white">contacts</span></h2>
                         </div>
-                        <div className="box-border border w-[250] text-A2"></div>
+                        <div className="box-border border w-[250] xs:w-[100] text-A2"></div>
                       </div>
                       <p className="text-gray tracking-widest leading-7 pt-10">I m interested in freelance/job opportunities. <br /> However, if you have other request or question, <br /> don’t hesitate to contact me</p>
             
-                      <div className="flex justify-between pt-10 relative md:flex-wrap sm:flex-wrap">
+                      <div className="flex justify-between pt-10 relative md:flex-wrap sm:flex-wrap xs:flex-wrap">
                         <div>
-                          <div className="flex gap-4">
+                          <div className="flex gap-4 xs:gap-2">
                             <div className="text-gray box-border border">
-                              <input className="text-gray text-sm bg-[#282C33] w-[244] h-[34]" type="text" placeholder="Name" />
+                              <input className="text-gray text-sm bg-[#282C33] w-[244] h-[34] xs:w-[50%]" type="text" placeholder="Name" />
                             </div>
                             <div className="text-gray box-border border">
-                              <input className="text-gray text-sm bg-[#282C33] w-[244] h-[34]" type="text" placeholder="Email" />
+                              <input className="text-gray text-sm bg-[#282C33] w-[244] h-[34] xs:w-[50%]" type="text" placeholder="Email" />
                             </div>
                           </div>
                           <div className="text-gray box-border border mt-4">
-                            <input className="text-gray text-sm bg-[#282C33] w-[505] h-[34]" type="text" placeholder="Title" />
+                            <input className="text-gray text-sm bg-[#282C33] w-[505] h-[34] xs:w-full" type="text" placeholder="Title" />
                           </div>
                           <div className="text-gray box-border border mt-4">
-                            <input className="text-gray text-sm bg-[#282c33] w-[505] pb-14 " type="text" placeholder="Message" />
+                            <input className="text-gray text-sm bg-[#282c33] w-[505] xs:w-full pb-14 " type="text" placeholder="Message" />
                           </div>
                           <button className="box-border border mt-4 px-5 pt-1 pb-1 hover:bg-slate-500 duration-1000 text-A2"><span className="text-white">Send</span></button>
                         </div>
-                        <div className="md:pt-8 sm:pt-8">
+                        <div className="md:pt-8 sm:pt-8 xs:pt-8">
                           <div className="text-gray box-border border">
                             <h2 className="text-white ml-2 mt-2 text-lg">Message me here</h2>
                             <Image className="ml-4 mr-4 mt-3" src="/Group 32.svg" width={170} height={32} alt="frame" />

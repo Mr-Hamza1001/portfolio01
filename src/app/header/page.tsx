@@ -1,14 +1,15 @@
 "use client"
 import { useState } from "react";
 import Image from "next/image";
-import { Link, Menu, X } from "lucide-react";
+import Link from "next/link";
+import {Import, Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
-      <header className="sticky top-0 z-10 max-w-6xl mx-auto lg:max-w-3xl md:max-w-2xl sm:max-w-xl xs:max-w-lg bg-[#282C33]">
+      <header className="sticky top-0 z-10 max-w-6xl mx-auto lg:max-w-3xl md:max-w-2xl sm:max-w-xl xs:max-w-lg ts:max-w-72 bg-[#282C33]">
         <nav className=" flex justify-between p-6 mx-auto mt-6">
     
           <div className="flex gap-2  ">
@@ -49,7 +50,7 @@ export default function Header() {
             <Link href="/about">#about-me</Link>
              <Link href="/contacts">#contacts</Link>
             <Link href="/blog">#blog</Link>
-            <Image className="py-1" src="/frame 16.svg" width={32} alt="frame" />
+            <Image className="py-1" src="/frame 16.svg" width={32} height={112} alt="frame" />
           </div>
         )}
 
@@ -58,7 +59,7 @@ export default function Header() {
         <div className="flex flex-col relative w-28">
           <div className="border w-48 rotate-90 relative text-gray"></div>
           <div className="absolute mt-28 right-0">
-            <Image className="py-1" src="/frame 16.svg" width={32} alt="frame" />
+            <Image className="py-1" src="/frame 16.svg" width={32} height={112} alt="frame" />
           </div>
         </div>
       </div>
